@@ -1,0 +1,77 @@
+id_eleve,trimestre,appreciation,av_travail,av_appreciation,encouragements,felicitations
+1,1,Excellent trimestre. Travail rigoureux et participation pertinente.,0,0,0,1
+1,2,Très bons résultats et investissement constant.,0,0,0,1
+1,3,Année remarquable. Félicitations pour la qualité du travail.,0,0,0,1
+1,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
+2,1,Ensemble satisfaisant. Des efforts réguliers sont à poursuivre.,0,0,0,0
+2,2,Progrès sensibles grâce à un travail plus méthodique.,0,0,0,0
+2,3,Bonne année. Continuez à approfondir les notions.,0,0,0,0
+2,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+3,1,Très bon niveau et attitude sérieuse en classe.,0,0,0,1
+3,2,Travail soigné et résultats solides.,0,0,0,1
+3,3,"Excellente année, marquée par une belle autonomie.",0,0,0,1
+3,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
+4,1,Résultats irréguliers. Le travail personnel doit être renforcé.,1,0,0,0
+4,2,Des efforts réels mais encore trop intermittents.,0,0,1,0
+4,3,Des progrès encourageants. Il faut gagner en régularité.,0,0,0,0
+4,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+5,1,"Très bon trimestre, avec une participation constructive.",0,0,0,1
+5,2,Résultats en hausse et comportement exemplaire.,0,0,0,1
+5,3,Belle réussite sur toute l’année.,0,0,0,1
+5,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
+6,1,Trimestre correct malgré quelques difficultés.,0,0,0,0
+6,2,Investissement en progrès et attitude positive.,0,0,1,0
+6,3,Année satisfaisante. Les efforts doivent se poursuivre.,0,0,0,0
+6,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+7,1,"Des capacités, mais un manque de concentration pénalise les résultats.",1,0,0,0
+7,2,"L’attention en cours progresse, mais le travail reste insuffisant.",0,0,1,0
+7,3,Bilan mitigé. Une méthode de travail plus stable est nécessaire.,0,0,0,0
+7,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+8,1,Ensemble sérieux. Les bases sont bien acquises.,0,0,0,0
+8,2,"Bon trimestre, avec davantage de prise d’initiative.",0,0,0,0
+8,3,Bonne année et progrès constants.,0,0,0,0
+8,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+9,1,Excellents résultats et implication exemplaire.,0,0,0,1
+9,2,Travail approfondi et grande autonomie.,0,0,0,1
+9,3,Année particulièrement réussie.,0,0,0,1
+9,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
+10,1,Résultats satisfaisants. Participation encore discrète.,0,0,0,0
+10,2,Bon investissement et progrès dans les évaluations.,0,0,0,0
+10,3,Bilan positif. Il faut prendre davantage confiance.,0,0,0,0
+10,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+11,1,Des difficultés persistent malgré une bonne volonté.,0,0,0,0
+11,2,Efforts appréciables et premiers progrès visibles.,0,0,1,0
+11,3,Année encourageante. La persévérance porte ses fruits.,0,0,0,0
+11,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+12,1,"Très bon trimestre, travail sérieux et constant.",0,0,0,1
+12,2,Résultats solides dans la plupart des disciplines.,0,0,0,1
+12,3,"Très belle année, avec une attitude irréprochable.",0,0,0,1
+12,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
+13,1,Travail trop irrégulier et résultats fragiles.,1,0,0,0
+13,2,"Une amélioration est constatée, mais reste insuffisante.",0,0,1,0
+13,3,Des efforts sont indispensables pour consolider les acquis.,0,0,0,0
+13,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+14,1,Bon ensemble. Élève attentive et appliquée.,0,0,0,0
+14,2,Progrès réguliers grâce à un travail suivi.,0,0,0,0
+14,3,Année sérieuse et satisfaisante.,0,0,0,0
+14,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+15,1,Très bonnes compétences et curiosité intellectuelle.,0,0,0,1
+15,2,Excellent trimestre et participation de qualité.,0,0,0,1
+15,3,Bilan remarquable sur l’ensemble de l’année.,0,0,0,1
+15,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
+16,1,"Résultats convenables, mais manque parfois de méthode.",0,0,0,0
+16,2,Travail plus structuré et résultats en amélioration.,0,0,0,0
+16,3,Année positive. Poursuivez sur cette voie.,0,0,0,0
+16,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+17,1,"Élève motivée, mais quelques acquis restent fragiles.",0,0,0,0
+17,2,Les efforts commencent à porter leurs fruits.,0,0,1,0
+17,3,Progrès notables. Continuez à travailler régulièrement.,0,0,0,0
+17,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+18,1,"Participation active, mais travail personnel inégal.",0,0,0,0
+18,2,Résultats en progression grâce à davantage de sérieux.,0,0,0,0
+18,3,"Bilan satisfaisant, malgré une marge de progression.",0,0,0,0
+18,4,Bilan annuel satisfaisant. Les acquis sont solides et les efforts doivent se poursuivre.,0,0,0,0
+19,1,"Très bon début d’année, avec une attitude exemplaire.",0,0,0,1
+19,2,Excellente régularité et résultats de qualité.,0,0,0,1
+19,3,Très belle année. Félicitations pour cet engagement.,0,0,0,1
+19,4,Excellent bilan annuel. Travail sérieux et résultats remarquables tout au long de l’année.,0,0,0,1
