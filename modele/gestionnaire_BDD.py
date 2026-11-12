@@ -21,17 +21,17 @@ class GestionnaireBDD:
         # Liste des élèves chargés
         self.liste_eleves = []
         self.liste_classes = []
-        # Chargement des élèves
-        self.liste_eleves = self.charger_eleves("PSTI")
+        # Liste des élèves
+        self.liste_eleves = self.lister_eleves("PSTI")
         print (self.liste_eleves)
         print(" ")
-        # chargement des classes
-        self.liste_classes = self.charger_classes()
+        # Liste des classes
+        self.liste_classes = self.lister_classes()
         print (self.liste_classes)
 
-    def charger_eleves(self, classe:str)-> list:
+    def lister_eleves(self, classe:str)-> list:
         """
-        Charge les eleves d'une classe depuis la base de données et
+        liste les eleves d'une classe depuis la base de données et
         les stocke dans self.liste_eleves.
         """
         self.liste_eleves.clear()
@@ -74,7 +74,7 @@ class GestionnaireBDD:
             self.liste_eleves.append(eleve)
         return self.liste_eleves
 
-    def charger_classes(self) -> list:
+    def lister_classes(self) -> list:
         """
         Charge les classes depuis la base de données et
         les stocke dans self.liste_classes.
