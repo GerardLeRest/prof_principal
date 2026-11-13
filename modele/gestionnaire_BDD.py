@@ -21,13 +21,8 @@ class GestionnaireBDD:
         # Liste des élèves chargés
         self.liste_eleves = []
         self.liste_classes = []
-        # Liste des élèves
-        self.liste_eleves = self.lister_eleves("PSTI")
-        print (self.liste_eleves)
-        print(" ")
         # Liste des classes
         self.liste_classes = self.lister_classes()
-        print (self.liste_classes)
 
     def lister_eleves(self, classe:str)-> list:
         """

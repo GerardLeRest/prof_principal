@@ -3,7 +3,7 @@ Fenêtre d'accueil – choix de l'organisme :
 École, Entreprise, Collectivité
 """
 from modele.gestionnaire_BDD import GestionnaireBDD
-from vue.zone_gauche import ZoneGauche
+from vue.vue_zone_gauche import ZoneGauche
 from PySide6.QtWidgets import QMainWindow, QHBoxLayout, QWidget
 
 class Fen_principale(QMainWindow):
