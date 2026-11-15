@@ -3,11 +3,10 @@ Fenêtre d'accueil
 """
 
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QLabel, QRadioButton, QPushButton, QScrollArea)
+    QWidget, QVBoxLayout, QLabel, QPushButton, )
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
 from pathlib import Path
-import json, sqlite3
 from modele.choix_chemin_ressources import chemin_ressources
 from modele.construction_BDD import ConstructionBDD
 from vue.fenetre_principale import Fen_principale

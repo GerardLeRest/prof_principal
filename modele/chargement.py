@@ -2,7 +2,6 @@
 Gestion des données dans le dossier utilisateur
 """
 import shutil
-import sys
 from pathlib import Path
 from modele.choix_chemin_ressources import chemin_ressources
 

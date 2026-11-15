@@ -30,11 +30,11 @@ class ZoneGauche(QWidget):
         super().__init__()
         self.conn = connecteur_bdd
         self.controleur_zone_gauche = ControleurZoneGauche(self.conn)
+        self.classe_selectionnee = "" 
         self.rang = 0 # rang de l'élève
         self.nbre_eleves = 0 # nbre des élèves dans la classe
+        self.liste_eleves = [] # listes des élèves avec leurs appréciations 
         self.interface()
-        self.rang = 0 # rang de l'élève
-        self.nbre_eleves = 0 # nbre des élèves dans la classe
 
     def interface(self):
         """interface de la zone gauche"""
@@ -44,17 +44,12 @@ class ZoneGauche(QWidget):
         # attacher le layout à la zone
         self.setLayout(self.layout_principal)
         
-    def recuper_eleves_classe(self, classe_selectionnee: str) -> None:
-        """ récuperation de la liste des élèves et leurs données"""
-        eleves = self.controleur_zone_gauche.recuperer_eleves(classe_selectionnee)
-        print(eleves)
-
     def interface_haute(self)-> None:
         """ affichage Classe et combobox"""
         # label Classe
-        label_classe = QLabel("Classe")
-        self.layout_principal.addWidget( label_classe, alignment=Qt.AlignTop | Qt.AlignHCenter)
-        label_classe.setStyleSheet("color: #76aeba; font-weight: bold; font-size: 16px")
+        self.label_classe = QLabel("Classe")
+        self.layout_principal.addWidget( self.label_classe, alignment=Qt.AlignTop | Qt.AlignHCenter)
+        self.label_classe.setStyleSheet("color: #76aeba; font-weight: bold; font-size: 16px")
         # Combobox pour la saisie de la classe
         self.comboBox = QComboBox()
         self.comboBox.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
@@ -121,3 +116,48 @@ class ZoneGauche(QWidget):
         self.boutons = [bouton_debut, bouton_reculer, bouton_avancer, bouton_fin]
         layout_boutons.setSpacing(6)  # espace horizontal entre flèches
         self.layout_principal.addLayout(layout_boutons)
+
+    def recuper_eleves_classe(self, classe_selectionnee: str) -> None:
+        """ récuperation de la liste des élèves et leurs données"""
+        self.classe_selectionnee = classe_selectionnee
+        self.liste_eleves = self.controleur_zone_gauche.recuperer_eleves(self.classe_selectionnee)
+        print(self.liste_eleves)
+        self.mise_a_jour_globale()
+
+    def mise_a_jour_globale(self) -> None:
+        """ mettre à jours toute la partie de gauche """
+        print ("MAJ")
+        self.mise_a_jour_nom_classe()
+        self.mise_a_jour_photo()
+
+    def mise_a_jour_nom_classe(self) -> None:
+        """ mettre a jour le nom de la classe """
+        print ("MAJ nom classe_selectionnnee")
+        print ("classe sélectionnée:", self.classe_selectionnee)
+        self.label_classe.setText(self.classe_selectionnee)
+
+    def mise_a_jour_photo(self) -> None:
+        """ mettre à jour la photo de l'élèves """
+        self.rang = 1
+        nom_image = self.liste_eleves[self.rang][3]
+        USER_BASE = Path.home() / ".local" / "prof_principal"
+        chemin_image = (
+            USER_BASE
+            / "fichiers"
+            / "photos"
+            / nom_image
+        )
+        print (chemin_image)
+        # si l'image existe
+        if chemin_image.exists():
+            pixmap = QPixmap(str(chemin_image))
+        else:
+            chemin_defaut = dossier_racine / "fichiers" / "images" / "inconnu.jpg"
+            pixmap = QPixmap(str(chemin_defaut))
+        # redimesionnemment de l'image
+        pixmap = pixmap.scaled(
+            128, 128,
+            Qt.AspectRatioMode.KeepAspectRatio,
+            Qt.TransformationMode.SmoothTransformation
+            )
+        self.label_image.setPixmap(pixmap)

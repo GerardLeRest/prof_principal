@@ -50,14 +50,14 @@ class GestionnaireBDD:
         # liste de tuples
         # [("Lucas", "Dupont", "TSTI1", "lucas.jpg", "Bon trimestre", 0, 0, 1, 0),
         # ("Emma", "Martin", etc...)
-        for (prenom, nom, classe,
+        for (prenom, nom, classe_eleves,
              photo, trimestre, appreciation,
              av_travail, av_comportement,
              encouragements, felicitations,) in self.curseur.fetchall():
             eleve = [
                 prenom,
                 nom, 
-                classe,
+                classe_eleves,
                 photo,
                 trimestre,
                 appreciation,
