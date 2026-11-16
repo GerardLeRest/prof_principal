@@ -25,8 +25,8 @@ class ConstructionBDD:
         self.curseur.execute("""
             CREATE TABLE IF NOT EXISTS identites (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                prenom TEXT,
                 nom TEXT,
+                prenom TEXT,
                 classe TEXT,
                 photo TEXT
             )

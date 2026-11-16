@@ -53,7 +53,7 @@ class GestionnaireBDD:
         for (prenom, nom, classe_eleves,
              photo, trimestre, appreciation,
              av_travail, av_comportement,
-             encouragements, felicitations,) in self.curseur.fetchall():
+             encouragements, felicitations) in self.curseur.fetchall():
             eleve = [
                 prenom,
                 nom, 
